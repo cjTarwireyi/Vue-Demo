@@ -9,8 +9,17 @@
     <h1>Hello Vue :)</h1>
     <div id="app">
         <h4>{{title}}</h4>
-        <p>{{count}}</p>
-        <button v-on:click="countValue()">count</button>
+        <ul>
+            <li v-for="book in filteredBooks">
+                <h3>
+                    {{book.title}}
+                </h3>
+                <p>
+                    {{book.author}}
+                </p>
+
+            </li>
+        </ul>
     </div>
 </html>
 <script src="app.js"></script>
